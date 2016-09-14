@@ -29,11 +29,11 @@ class FinderListViewController: EDHFinderListViewController {
     // MARK: - Utilities
     
     func initAd() {
-        if UIDevice.currentDevice().orientation.isLandscape {
-            self.bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerLandscape)
-        } else {
-            self.bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        }
+//        if UIDevice.currentDevice().orientation.isLandscape {
+//            self.bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerLandscape)
+//        } else {
+//            self.bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+//        }
         
 //        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
 //            self.bannerView = GADBannerView(adSize: kGADAdSizeMediumRectangle)
@@ -41,14 +41,14 @@ class FinderListViewController: EDHFinderListViewController {
 //            self.bannerView = GADBannerView(adSize: kGADAdSizeBanner)
 //        }
         
-        self.bannerView.adUnitID =  AppSecret.Ad.AdMob.unitId
-        self.bannerView.rootViewController = self
-        
-        let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
-        self.bannerView.loadRequest(request)
-        
-        self.tableView.tableFooterView = self.bannerView
+//        self.bannerView.adUnitID =  AppSecret.Ad.AdMob.unitId
+//        self.bannerView.rootViewController = self
+//        
+//        let request = GADRequest()
+//        request.testDevices = [kGADSimulatorID]
+//        self.bannerView.loadRequest(request)
+//        
+//        self.tableView.tableFooterView = self.bannerView
     }
 
 }
